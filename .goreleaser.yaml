@@ -44,6 +44,13 @@ archives:
     format_overrides:
       - goos: windows
         formats: [zip]
+  - files:
+      - README*
+      - CHANGELOG
+      - license*
+      - readme*
+      - changelog
+      - completions/*
 
 changelog:
   sort: asc
