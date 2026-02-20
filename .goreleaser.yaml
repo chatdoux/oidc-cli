@@ -168,7 +168,7 @@ homebrew_casks:
 
     # Directory inside the repository to put the cask.
     # Default: Casks
-    directory: Casks
+    directory: Formula
 
     # Caveats for the user of your binary.
     caveats: "How to use this binary"
@@ -205,13 +205,13 @@ homebrew_casks:
     #   ...
 
     # Dependencies for the cask.
-    dependencies:
-      - cask: some-cask
-      - formula: some-formula
+    # dependencies:
+    #   - cask: some-cask
+    #   - formula: some-formula
 
     # Packages that conflict with your cask.
-    conflicts:
-      - cask: some-cask
+    # conflicts:
+    #   - cask: some-cask
 
     # Hooks for the cask lifecycle.
     #
