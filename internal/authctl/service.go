@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/sk1m/oidc-cli/internal/browser"
-	"github.com/sk1m/oidc-cli/internal/clock"
-	"github.com/sk1m/oidc-cli/internal/ioreader"
-	"github.com/sk1m/oidc-cli/internal/logger"
-	"github.com/sk1m/oidc-cli/internal/oidc"
+	"github.com/chatdoux/oidc-cli/internal/browser"
+	"github.com/chatdoux/oidc-cli/internal/clock"
+	"github.com/chatdoux/oidc-cli/internal/ioreader"
+	"github.com/chatdoux/oidc-cli/internal/logger"
+	"github.com/chatdoux/oidc-cli/internal/oidc"
 )
 
 type Service struct {

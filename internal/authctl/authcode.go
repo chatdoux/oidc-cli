@@ -7,8 +7,8 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"github.com/sk1m/oidc-cli/internal/oidc"
-	"github.com/sk1m/oidc-cli/internal/pkce"
+	"github.com/chatdoux/oidc-cli/internal/oidc"
+	"github.com/chatdoux/oidc-cli/internal/pkce"
 )
 
 type AuthCodeOpts struct {

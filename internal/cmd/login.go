@@ -9,10 +9,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/sk1m/oidc-cli/internal/authctl"
-	"github.com/sk1m/oidc-cli/internal/config"
-	"github.com/sk1m/oidc-cli/internal/logger"
-	"github.com/sk1m/oidc-cli/internal/oidc"
+	"github.com/chatdoux/oidc-cli/internal/authctl"
+	"github.com/chatdoux/oidc-cli/internal/config"
+	"github.com/chatdoux/oidc-cli/internal/logger"
+	"github.com/chatdoux/oidc-cli/internal/oidc"
 )
 
 var defaultListenAddress = []string{"127.0.0.1:8000", "127.0.0.1:18000"}

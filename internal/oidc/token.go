@@ -7,7 +7,7 @@ import (
 	"github.com/coreos/go-oidc/v3/oidc"
 	"golang.org/x/oauth2"
 
-	"github.com/sk1m/oidc-cli/internal/jwt"
+	"github.com/chatdoux/oidc-cli/internal/jwt"
 )
 
 // Token represents a set of ID token, access token and refresh token.

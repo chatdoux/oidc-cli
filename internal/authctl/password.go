@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/sk1m/oidc-cli/internal/oidc"
+	"github.com/chatdoux/oidc-cli/internal/oidc"
 )
 
 const (

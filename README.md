@@ -1,5 +1,5 @@
 # oidc-cli
-[![Go](https://github.com/sk1m/oidc-cli/actions/workflows/go.yml/badge.svg)](https://github.com/sk1m/oidc-cli/actions/workflows/go.yml) [![Go Report Card](https://goreportcard.com/badge/github.com/sk1m/oidc-cli)](https://goreportcard.com/report/github.com/sk1m/oidc-cli)
+[![Go](https://github.com/chatdoux/oidc-cli/actions/workflows/go.yml/badge.svg)](https://github.com/chatdoux/oidc-cli/actions/workflows/go.yml) [![Go Report Card](https://goreportcard.com/badge/github.com/chatdoux/oidc-cli)](https://goreportcard.com/report/github.com/chatdoux/oidc-cli)
 
 This is a simple command line tool to interact with Open ID Connect providers.
 
@@ -12,7 +12,7 @@ Here is an example of authentication with the Keycloak:
 ### Setup
 
 ```sh
-brew install sk1m/tools/oidc
+brew install chatdoux/tools/oidc
 ```
 
 ### Usage

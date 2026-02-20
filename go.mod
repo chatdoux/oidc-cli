@@ -1,4 +1,4 @@
-module github.com/sk1m/oidc-cli
+module github.com/chatdoux/oidc-cli
 
 go 1.23
 

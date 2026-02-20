@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sk1m/oidc-cli/internal/jwt"
+	"github.com/chatdoux/oidc-cli/internal/jwt"
 )
 
 type timeProvider time.Time

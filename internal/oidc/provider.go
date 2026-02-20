@@ -8,7 +8,7 @@ import (
 	"github.com/coreos/go-oidc/v3/oidc"
 	"golang.org/x/oauth2"
 
-	"github.com/sk1m/oidc-cli/internal/pkce"
+	"github.com/chatdoux/oidc-cli/internal/pkce"
 )
 
 type provider struct {

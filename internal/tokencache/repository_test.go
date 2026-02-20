@@ -7,7 +7,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/sk1m/oidc-cli/internal/oidc"
+	"github.com/chatdoux/oidc-cli/internal/oidc"
 )
 
 func TestRepository_FindByKey(t *testing.T) {
@@ -26,7 +26,7 @@ func TestRepository_FindByKey(t *testing.T) {
 			t.Errorf("could not compute the key: %s", err)
 		}
 		p := filepath.Join(dir, filename)
-		if err := os.WriteFile(p, []byte(json), 0600); err != nil {
+		if err := os.WriteFile(p, []byte(json), 0o600); err != nil {
 			t.Fatalf("could not write to the temp file: %s", err)
 		}
 

@@ -1,4 +1,4 @@
-GOLANGCI_VERSION = "v1.61.0"
+GOLANGCI_VERSION = "v2.10.1"
 
 all: lint test
 
@@ -15,7 +15,6 @@ test:
 	go test ./...
 
 cover:
-	COVER_FILE="profile.cov"
-	go test -coverpkg=./internal/... -coverprofile=$COVER_FILE ./...
-	go tool cover -func $COVER_FILE
-	@[[ -f $COVER_FILE ]] && rm $COVER_FILE
+	go test -coverpkg=./internal/... -coverprofile=$(COVERAGE_FILE) ./... || rm -f $(COVERAGE_FILE)
+	go tool cover -func $(COVERAGE_FILE)
+	rm -f $(COVERAGE_FILE)

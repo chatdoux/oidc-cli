@@ -27,8 +27,8 @@ builds:
     binary: oidc
     ldflags:
       - -s -w
-      - -X github.com/sk1m/oidc-cli/internal/build.version={{.Version}}
-      - -X github.com/sk1m/oidc-cli/internal/build.date={{.Date}}
+      - -X github.com/chatdoux/oidc-cli/internal/build.version={{.Version}}
+      - -X github.com/chatdoux/oidc-cli/internal/build.date={{.Date}}
 
 archives:
   - format: tar.gz
@@ -110,7 +110,7 @@ brews:
     #
     # Default depends on the client.
     # Templates: allowed.
-    url_template: "https://github.com/sk1m/oidc-cli/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
+    url_template: "https://github.com/chatdoux/oidc-cli/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
 
     # Headers to include in the `url` stanza.
     # This can be a more modern alternative to `download_strategy` in some
@@ -147,7 +147,7 @@ brews:
     # Your app's homepage.
     #
     # Default: inferred from global metadata.
-    homepage: "https://github.com/sk1m/oidc-cli"
+    homepage: "https://github.com/chatdoux/oidc-cli"
 
     # Your app's description.
     #
@@ -221,7 +221,7 @@ brews:
       bin.install "oidc"
       bash_completion.install "completions/oidc.bash" => "oidc"
       zsh_completion.install "completions/oidc.zsh" => "_oidc"
-      fish_completion.install "completions/oidc.fish" 
+      fish_completion.install "completions/oidc.fish"
 
     # Additional install instructions so you don't need to override `install`.
     #
@@ -242,7 +242,7 @@ brews:
       # Repository owner.
       #
       # Templates: allowed.
-      owner: sk1m
+      owner: chatdoux
 
       # Repository name.
       #
@@ -310,7 +310,7 @@ brews:
       #   # The Git URL to push.
       #   #
       #   # Templates: allowed.
-      #   url: "git@github.com:sk1m/oidc-cli.git"
+      #   url: "git@github.com:chatdoux/oidc-cli.git"
 
       #   # The SSH private key that should be used to commit to the Git
       #   # repository.

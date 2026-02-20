@@ -9,7 +9,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/sk1m/oidc-cli/internal/oidc"
+	"github.com/chatdoux/oidc-cli/internal/oidc"
 )
 
 type Repo interface {

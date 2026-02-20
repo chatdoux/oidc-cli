@@ -9,11 +9,11 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/sk1m/oidc-cli/internal/authctl"
-	"github.com/sk1m/oidc-cli/internal/config"
-	"github.com/sk1m/oidc-cli/internal/logger"
-	"github.com/sk1m/oidc-cli/internal/oidc"
-	"github.com/sk1m/oidc-cli/internal/tokencache"
+	"github.com/chatdoux/oidc-cli/internal/authctl"
+	"github.com/chatdoux/oidc-cli/internal/config"
+	"github.com/chatdoux/oidc-cli/internal/logger"
+	"github.com/chatdoux/oidc-cli/internal/oidc"
+	"github.com/chatdoux/oidc-cli/internal/tokencache"
 )
 
 type TokenOpts struct {

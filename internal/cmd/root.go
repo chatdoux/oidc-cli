@@ -6,7 +6,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/sk1m/oidc-cli/internal/logger"
+	"github.com/chatdoux/oidc-cli/internal/logger"
 )
 
 func NewCmdRoot(f *Factory, version, buildDate string) (*cobra.Command, error) {

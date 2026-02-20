@@ -13,8 +13,8 @@ import (
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/clientcredentials"
 
-	"github.com/sk1m/oidc-cli/internal/logger"
-	"github.com/sk1m/oidc-cli/internal/pkce"
+	"github.com/chatdoux/oidc-cli/internal/logger"
+	"github.com/chatdoux/oidc-cli/internal/pkce"
 )
 
 type Client interface {
@@ -271,7 +271,11 @@ func (c *OIDCClient) Refresh(ctx context.Context, refreshToken string) (*Token, 
 	return c.verifyToken(ctx, token, "")
 }
 
-func authorizationRequestOptions(nonce string, pkceParams pkce.Params, extra map[string]string) []oauth2.AuthCodeOption {
+func authorizationRequestOptions(
+	nonce string,
+	pkceParams pkce.Params,
+	extra map[string]string,
+) []oauth2.AuthCodeOption {
 	opts := []oauth2.AuthCodeOption{
 		oauth2.AccessTypeOffline,
 		oidc.Nonce(nonce),

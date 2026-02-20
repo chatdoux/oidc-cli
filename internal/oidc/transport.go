@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"net/http/httputil"
 
-	"github.com/sk1m/oidc-cli/internal/logger"
+	"github.com/chatdoux/oidc-cli/internal/logger"
 )
 
 type Transport struct {

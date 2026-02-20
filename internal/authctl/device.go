@@ -6,7 +6,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/sk1m/oidc-cli/internal/oidc"
+	"github.com/chatdoux/oidc-cli/internal/oidc"
 )
 
 type DeviceOpts struct {

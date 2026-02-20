@@ -4,8 +4,8 @@ import (
 	"context"
 	"os"
 
-	"github.com/sk1m/oidc-cli/internal/build"
-	"github.com/sk1m/oidc-cli/internal/cmd"
+	"github.com/chatdoux/oidc-cli/internal/build"
+	"github.com/chatdoux/oidc-cli/internal/cmd"
 )
 
 type exitCode int
