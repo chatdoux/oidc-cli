@@ -30,6 +30,7 @@ oidc login {ANYNAME} \
 This command needs to login into OpenID Connect provider and use later saved users to receive access/id/refresh tokens.
 
 `oidc` writes the ID, access and refresh tokens to the config (default `~/.config/oidc/config.yaml`).
+Refresh token is stored in keychain of macos, otherwise in the config file.
 
 If the cached token is valid, tool just returns it.
 If the cached token has expired, tool will refresh the token using the refresh token.

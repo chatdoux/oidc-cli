@@ -2,6 +2,8 @@ package config
 
 import (
 	"bytes"
+	"crypto/sha256"
+	"encoding/hex"
 	"errors"
 	"fmt"
 	"os"
@@ -23,7 +25,13 @@ type User struct {
 	GrantType    string   `yaml:"grant_type"`
 	IDToken      string   `yaml:"id_token,omitempty"`
 	AccessToken  string   `yaml:"access_token,omitempty"`
-	RefreshToken string   `yaml:"refresh_token"`
+	RefreshToken string   `yaml:"refresh_token,omitempty"`
+}
+
+func (u User) hashID() string {
+	h := sha256.New()
+	h.Write([]byte(u.Name + u.IssuerURL + u.ClientID + u.GrantType))
+	return hex.EncodeToString(h.Sum(nil))
 }
 
 type Config struct {
@@ -81,6 +89,11 @@ func FindUser(filename string, username string) (*User, error) {
 
 	for _, user := range cfg.Users {
 		if user.Name == username {
+			if user.RefreshToken == "" {
+				if token, err := getKeychainPassword(user.hashID()); err == nil { // if NO error
+					user.RefreshToken = token
+				}
+			}
 			return user, nil
 		}
 	}
@@ -118,6 +131,11 @@ func SaveUser(filename string, user *User) error {
 	var replaced bool
 	for i, u := range cfg.Users {
 		if u.Name == user.Name {
+			if user.RefreshToken != "" {
+				if err := setKeychainPassword(user.hashID(), user.RefreshToken); err == nil { // if NO error
+					user.RefreshToken = ""
+				}
+			}
 			cfg.Users[i] = user
 			replaced = true
 			break
