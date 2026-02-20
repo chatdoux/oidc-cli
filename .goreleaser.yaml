@@ -46,10 +46,8 @@ archives:
         formats: [zip]
     files:
       - README*
-      - CHANGELOG
       - license*
       - readme*
-      - changelog
       - completions/*
 
 changelog:
