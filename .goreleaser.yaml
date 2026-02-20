@@ -130,36 +130,36 @@ homebrew_casks:
 
       # Used when the domains of `url` and `homepage` differ.
       # Templates: allowed.
-      verified: "github.com/chatdoux/oidc-cli/"
+      # verified: "github.com/chatdoux/oidc-cli/"
 
       # Download strategy or format specification
       # See official Cask Cookbook for allowed values.
       # Templates: allowed.
-      using: ":homebrew_curl"
+      # using: ":homebrew_curl"
 
       # HTTP cookies to send with the download request
       # Templates: allowed.
-      cookies:
-        license: "accept-backup"
+      # cookies:
+      #   license: "accept-backup"
 
       # HTTP referer header
       # Templates: allowed.
-      referer: "https://example.com/download-page"
+      # referer: "https://example.com/download-page"
 
       # Additional HTTP headers
       # Templates: allowed.
-      headers:
-        - "X-Version: {{ .Version }}"
+      # headers:
+      #   - "X-Version: {{ .Version }}"
 
       # Custom User-Agent header
       # Templates: allowed.
-      user_agent: "MyApp/1.0 (macOS)"
+      # user_agent: "MyApp/1.0 (macOS)"
 
       # Custom body when using POST request
       # Templates: allowed.
-      data:
-        format: "dmg"
-        platform: "mac"
+      # data:
+      #   format: "dmg"
+      #   platform: "mac"
 
     # The project name and current git tag are used in the format string.
     #
@@ -168,7 +168,7 @@ homebrew_casks:
 
     # Directory inside the repository to put the cask.
     # Default: Casks
-    directory: Formula
+    # directory: Casks
 
     # Caveats for the user of your binary.
     caveats: "How to use this binary"
@@ -191,7 +191,7 @@ homebrew_casks:
     # in case there is an indicator for prerelease in the tag e.g. v1.0.0-rc1
     #
     # Templates: allowed.
-    skip_upload: true
+    # skip_upload: true
 
     # Custom block for brew.
     # Can be used to specify alternate downloads for devel or head releases.
